@@ -1,0 +1,253 @@
+.ctaMain {
+  background-color: var(--color-neutral-900);
+  border-radius: 25px;
+  padding: 10px 13px 20px 14px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+
+  @media (width > 768px) {
+    padding: 91px 65px 59px 63px;
+    margin-top: 91px;
+    margin-bottom: 23px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (width > 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    @media (width > 1440px) {
+      flex-wrap: nowrap;
+    }
+
+    .compositeImage {
+      display: grid;
+      translate: -6px -66px;
+
+      @media (width > 1024px) {
+        translate: -17px -129px;
+        scale: 1.42;
+      }
+
+      @media (width > 1152px) {
+        translate: -75px -129px;
+        scale: 1.52;
+      }
+
+      @media (width > 1280px) {
+        translate: -75px -129px;
+        scale: 1.62;
+      }
+
+      @media (width > 1366px) {
+        translate: 40px -129px;
+        scale: 1.62;
+      }
+
+      & > * {
+        grid-area: 1/1/-1/-1;
+      }
+
+      .front {
+        width: 371.71px;
+        height: auto;
+        translate: -21px 9px;
+        scale: 1.05;
+      }
+
+      .back {
+        width: 282.16px;
+        height: auto;
+        translate: 91px -2px;
+        scale: 0.97;
+      }
+
+      .black {
+        width: 156px;
+        height: auto;
+        translate: 206px 267px;
+        scale: 1.13;
+
+        @media (width > 1024px) {
+          translate: 195px 250px;
+          scale: 0.7;
+        }
+      }
+
+      .pink {
+        width: 76.7px;
+        height: auto;
+        translate: 297px 235px;
+        scale: 1.13;
+
+        @media (width > 1024px) {
+          translate: 266px 245px;
+          scale: 0.7;
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media (width > 1024px) {
+        align-items: flex-start;
+        max-width: 354px;
+        order: -1;
+      }
+
+      @media (width > 1280px) {
+        max-width: 411px;
+      }
+
+      .title {
+        color: var(--color-neutral-50);
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 1;
+        letter-spacing: -0.05em;
+        text-align: center;
+        margin-block: 19px 23px;
+
+        @media (width > 1024px) {
+          text-align: left;
+          font-size: 34px;
+        }
+
+        @media (width > 1280px) {
+          font-size: 42px;
+        }
+      }
+
+      .subtitle {
+        color: var(--color-neutral-50);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.16;
+        letter-spacing: -0.03em;
+        display: block;
+        text-align: center;
+        margin-bottom: 19px;
+        text-wrap: balance;
+
+        @media (width > 1024px) {
+          text-align: left;
+          font-size: 18px;
+        }
+
+        @media (width > 1280px) {
+          font-size: 20px;
+        }
+      }
+
+      .button {
+        max-width: 387px;
+        width: 100%;
+        margin-bottom: 17px;
+
+        @media (width > 768px) {
+          max-width: 308px;
+          margin-bottom: 30px;
+        }
+      }
+
+      .labelsList {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 11px;
+        margin-bottom: 27px;
+
+        @media (width > 1024px) {
+          align-items: flex-start;
+          margin-bottom: 70px;
+        }
+
+        .labelItem {
+          color: var(--color-neutral-300);
+          min-height: 46px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          border: 1px solid var(--color-opacity-500);
+          border-radius: 12px;
+          padding-inline: 18px;
+
+          .labelCardTitle {
+            color: var(--color-neutral-50);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+    .certsList {
+      display: flex;
+      gap: 19px;
+      justify-content: center;
+      margin-bottom: 12px;
+
+      @media (width > 1024px) {
+        flex-basis: 100%;
+      }
+
+      @media (width > 1366px) {
+        flex-basis: auto;
+        flex-direction: column;
+        margin-bottom: 80px;
+      }
+
+      .certsItem {
+        .certsPic {
+          opacity: 0.48;
+        }
+      }
+    }
+  }
+
+  .chipSetBox {
+    .chipSetBoxTitle {
+      border-top: 1px solid var(--color-neutral-700);
+      padding-block: 19px 17px;
+      text-align: left;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 1.16;
+      letter-spacing: -0.02em;
+    }
+
+    .chipSetList {
+      color: var(--color-primary-600);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+
+      .chipSetItem {
+        background-color: var(--color-neutral-950);
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding-inline: 17px;
+        height: 36px;
+        border-radius: 10px;
+
+        .chipSetDesc {
+          color: var(--color-neutral-400);
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 1.15;
+        }
+      }
+    }
+  }
+}

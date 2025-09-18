@@ -1,0 +1,19 @@
+.logoLink {
+  display: flex;
+  justify-content: center;
+  height: 63px;
+
+  @media (width > 768px) {
+    height: fit-content;
+  }
+
+  .logoPic {
+    width: 100px;
+    height: auto;
+    color: var(--color-neutral-100);
+
+    @media (width > 768px) {
+      width: 150px;
+    }
+  }
+}

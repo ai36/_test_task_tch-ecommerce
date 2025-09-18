@@ -1,0 +1,12 @@
+.ctaHelper {
+  display: grid;
+  gap: 15px;
+  grid-template: repeat(4, 1fr) / repeat(1, 1fr);
+
+  @media (width > 1024px) {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+  @media (width > 1280px) {
+    grid-template: repeat(1, 1fr) / repeat(4, 1fr);
+  }
+}
