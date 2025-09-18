@@ -4,7 +4,7 @@
 
 ## E-Commerce LP
 [GitHub-repo link](https://github.com/ai36/_test_task_tch-ecommerce)\
-[Demo link](https://vercel.app/)
+[Demo link](https://test-task-tch-ecommerce.vercel.app/)
 
 ## Setup
 
