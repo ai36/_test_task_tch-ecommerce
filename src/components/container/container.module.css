@@ -1,0 +1,21 @@
+.container {
+  width: clamp(375px, 100%, 1440px);
+  margin: auto;
+
+  padding-inline: 14px;
+
+  @media (width > 768px) {
+    padding-inline: 66px;
+  }
+
+  &:has(header) {
+    background-color: var(--color-neutral-999);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    @media (width > 768px) {
+      position: static;
+    }
+  }
+}

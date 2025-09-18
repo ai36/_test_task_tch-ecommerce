@@ -1,0 +1,71 @@
+.reviews {
+  width: 354px;
+  gap: 8px 20px;
+  display: grid;
+  grid-template-columns: 120px auto;
+  translate: 16px 0;
+
+  @media (width > 1024px) {
+    translate: unset;
+  }
+
+  .photosList {
+    display: grid;
+    grid-template-columns: repeat(17, 7px);
+    height: 35px;
+
+    .photoItem:nth-child(1) {
+      grid-area: 1/1/2/6;
+    }
+    .photoItem:nth-child(2) {
+      grid-area: 1/5/2/10;
+    }
+    .photoItem:nth-child(3) {
+      grid-area: 1/9/2/14;
+    }
+    .photoItem:nth-child(4) {
+      grid-area: 1/13/2/18;
+    }
+
+    .photoItem {
+      display: grid;
+      place-content: center;
+      overflow-y: hidden;
+      border-radius: 35px;
+      box-shadow: 0 0 0 3px var(--color-neutral-850);
+    }
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .scoreBox {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      height: 16px;
+      overflow-y: hidden;
+
+      .starBox {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .score {
+        color: var(--color-neutral-50);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .text {
+      color: var(--color-opacity-0);
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+}

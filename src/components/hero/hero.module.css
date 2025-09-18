@@ -1,0 +1,36 @@
+.hero {
+  text-align: center;
+  color: var(--color-neutral-0);
+  font-weight: 800;
+  font-size: 33px;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  text-wrap: balance;
+
+  @media (width > 768px) {
+    font-size: 56px;
+    line-height: 1;
+  }
+
+  @media (width > 1024px) {
+    font-size: 68px;
+    line-height: 1;
+  }
+
+  .accent {
+    color: var(--color-primary-600);
+    display: block;
+    margin-bottom: 21px;
+
+    @media (width > 768px) {
+      margin-bottom: 80px;
+    }
+  }
+
+  .button {
+    margin: 0 auto;
+    width: 62.3px;
+    height: 62.3px;
+  }
+}
